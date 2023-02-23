@@ -1,1 +1,56 @@
 /* TODO: Make it awesome */
+body{
+  background-color: beige;
+}
+
+h1{
+  font-family: 'Gajraj One', cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+nav{
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+
+.navTool{
+  display: inline-block;
+}
+
+
+.copy li{
+  list-style-type: circle;
+  text-align: center;
+  position: relative;
+  top: 200px;
+  font-family: 'Phudu', cursive;
+}
+ol{
+  line-height: 50px;
+}
+
+legend{
+  margin-bottom: 30px;
+}
+
+fieldset{
+  font-family: 'Phudu', cursive;
+  text-align: center;
+  position: relative;
+  top: 350px;
+}
+
+
+
+
+
+
+
+
+footer{
+  text-align: center;
+  position: relative;
+  top: 800px;
+}

@@ -22,16 +22,25 @@ Cart.prototype.addItem = function(product, quantity) {
 };
 
 Cart.prototype.saveToLocalStorage = function() {
-  // TODO: Fill in this instance method to save the contents of the cart to localStorage
+  // MAYBE DONE??: Fill in this instance method to save the contents of the cart to localStorage
+  let stringData =JSON.stringify(this.items);
+  localStorage.setItem('myProducts',stringData);
+  console.log(stringData);
 };
+
+// let retreivedProducts = localStorage.getItem(stringData);
+// console.log(retreivedProducts);
 
 Cart.prototype.removeItem = function(item) {
   // TODO: Fill in this instance method to remove one item from the cart.
   // Note: You will have to decide what kind of parameter to pass in here!
+
 };
 
 Cart.prototype.updateCounter = function() {
-  // TODO: Update the cart count in the header nav with the number of items in the Cart
+  // DONE: Update the cart count in the header nav with the number of items in the Cart
+  let updateCount = document.getElementById('itemCount')
+  updateCount.textContent = this.items.length
 }
 
 const CartItem = function(product, quantity) {
